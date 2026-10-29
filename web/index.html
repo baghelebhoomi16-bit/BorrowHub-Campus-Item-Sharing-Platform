@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BorrowHub - Trusted peer-to-peer campus item-sharing platform with auditable chat and deposit settlement.">
+    <title>BorrowHub - Campus Item Sharing</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="chat.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div id="app" class="app-container">
+        <!-- Top Navigation Header -->
+        <header class="app-header">
+            <div class="header-inner">
+                <a href="#browse" class="brand-logo" id="nav-brand">
+                    <span class="logo-icon">🔄</span>
+                    <span class="logo-text">Borrow<span class="accent">Hub</span></span>
+                </a>
+
+                <!-- Navigation Links -->
+                <nav class="nav-menu" id="nav-menu">
+                    <a href="#browse" class="nav-link active" id="nav-browse">Explore</a>
+                    <a href="#my-requests" class="nav-link" id="nav-requests">My Borrows</a>
+                    <a href="#my-listings" class="nav-link" id="nav-listings">My Listings</a>
+                    <a href="#list-item" class="nav-link btn-link" id="nav-list-item">+ List Item</a>
+                    <a href="#notifications" class="nav-link icon-link" id="nav-notifs" title="Notifications">
+                        🔔 <span class="badge" id="notif-badge" style="display:none;">0</span>
+                    </a>
+                    <a href="#admin" class="nav-link" id="nav-admin" style="display:none;">Admin</a>
+                </nav>
+
+                <!-- Auth Buttons / User Profile -->
+                <div class="header-auth" id="header-auth">
+                    <!-- Populated dynamically by app.js -->
+                </div>
+            </div>
+        </header>
+
+        <!-- Notification Toast Container -->
+        <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+        <!-- Main View Container -->
+        <main id="view" class="main-content">
+            <!-- Loading placeholder initially -->
+            <div class="loading-spinner-container">
+                <div class="spinner"></div>
+                <p>Loading BorrowHub...</p>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div class="footer-inner">
+                <p>&copy; 2026 BorrowHub. Built for campus trust and verified item sharing.</p>
+                <div class="footer-meta">
+                    <span class="status-indicator"></span>
+                    <span id="health-status">System Operational</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

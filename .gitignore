@@ -1,0 +1,36 @@
+# Build directories
+build/
+bin/
+lib/
+out/
+
+# Dependency directories
+vcpkg_installed/
+vcpkg/
+
+# Runtime data
+data/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.db
+
+# IDE and Editor configurations
+.vscode/
+.vs/
+.idea/
+*.swp
+*.user
+
+# Coverage and testing outputs
+*.gcda
+*.gcno
+*.gcov
+cov.info
+coverage/
+Testing/
+
+# System and logs
+*.log
+.DS_Store
+Thumbs.db
